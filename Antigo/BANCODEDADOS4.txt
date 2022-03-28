@@ -1,0 +1,25 @@
+insert into gafanhotos values
+
+('123', default, 'Paola', 'Enfermeira', '1999-03-21', 'F', '75.66', '1.72', 'grande', default);
+
+
+
+select * from  gafanhotos;
+
+describe gafanhotos;
+
+
+alter table gafanhotos 
+add column cursopreferido int;
+
+
+
+alter table gafanhotos add foreign key (cursopreferido)
+
+references cursos(idcursos);
+
+alter table cursos
+
+change column matricula idcursos int not null;
+
+update gafanhotos set cursopreferido = '6' where id = '2';

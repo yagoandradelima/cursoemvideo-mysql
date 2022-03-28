@@ -1,0 +1,44 @@
+BANCO DE DADOS 2
+
+CREATE DATABASE cadastro
+
+DEFAULT CHARACTER SET utf8
+
+DEFAULT COLLATE utf8_general_ci; 
+
+
+
+CREATE TABLE pessoas (
+
+id int NOT NULL auto_increment,
+
+nome varchar(30) NOT NULL,
+
+nascimento date, 
+
+sexo enum('M','F') NOT NULL,
+
+peso decimal(5,2), 
+
+altura decimal (3,2),
+
+nacionalidade varchar(20) default 'Brasileiro',
+
+primary key (id)
+
+) default charset = utf8;
+
+
+
+insert into pessoas values
+
+(default, 'Carla', '1974-01-03', 'F', '79.5', '1.93', 'Estados Unidos'),
+
+(default, 'Carlos', '1974-09-09', 'M', '99.5', '1.53', 'Canadá'),
+
+(default, 'Júlio', '2012-01-03', 'M', '25.5', '0.73', default);
+
+
+
+select * from pessoas;
+

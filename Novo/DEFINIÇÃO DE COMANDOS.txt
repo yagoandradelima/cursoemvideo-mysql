@@ -1,0 +1,23 @@
+Comandos DDL:
+DATA DEFINITION LANGUAGE - Linguagem de Definição do Banco de Dados.
+	- CREATE DATABASE
+	- CREATE TABLE
+	- ALTER TABLE
+	- DROP TABLE
+
+Comandos DML:
+DATA MANIPULATION LANGUAGE - Linguagem de manipulação do Banco de Dados.
+	- INSERT INTO
+	- UPDATE
+	- DELETE
+	- TRUNCATE
+
+
+Comandos DQL:
+DATA QUERY LANGUAGE - Linguagem de leitura e solicitação de Banco de Dados
+	- SELECT*
+
+
+
+
+*SELECT possui uma dualidade de definição em muitos autores. Alguns classificam ele como DML enquantos outros como DQL. Na minha visão, SELECT não manipula dados, ele apenas os filtra em solicitações. Por isso coloquei ele em DQL.

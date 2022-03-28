@@ -1,0 +1,54 @@
+COMANDOS MYSQL
+
+CREAT DATABASE x; - Cria um banco de dados vazio, onde não há nada esécificado
+DROP DATABASE x; - Apaga um banco de dados feito anteriormente
+DEFAULT CHARACTER SET utf8; - Permite que haja acantuações nos caracteres
+DEFAULT COLLATE utf8_general_ci; - Não lembro (kkkk)
+CREATE TABLE x1; - Cria uma tabela onde serão colocados as opções de guardo do 
+bando de dados
+ALTER TABLE x1; - Altera algumas definições nas colunas da tabela 
+DROP TABLE x1; - Apaga a tabela com tudo junto (inclusive os dados)
+INSERT INTO x1; - Insere dados dentro de uma tabela
+DELET FROM;
+UPDATE;
+SELECT com % ou _ - há códigos teste com esses comandos, o % significa que pode
+ou não haver um caractere ali, o _ significa que HÁ um caractere ali;
+
+
+TIPOS PRIMITIVOS DO MYSQL (usado para dimensionar e fazer com que o mysql entenda
+o que você está usando dentro das tabelas):
+
+ - Numérico
+  ~ Inteiro
+   + TinyInt (3 bytes), SmallInt, Int, MediumInt, BigInt  
+
+  ~ Real
+   + Decimal, Float, Double, Real
+
+  ~ Lógico
+   + Bit, Boolean
+
+
+ - Data/Tempo
+   + Date, DateTime, TimeStamp, Time, Year
+
+ - Literal
+   ~ Caractere
+    + Char, VarChar
+   
+   ~ Texto
+    + TinyText, Text, MediumText, LongText
+
+   ~ Binário
+    + TinyBlob, Blob, MediumBlob, LongBlob
+
+   ~ Coleção
+    + Enum, Set  
+
+
+
+
++ tinyint - Aceita somente 3 bites. Pode se usar 'tinyint (3)' se preferir, mas se deixar só tinyint ele automaticamente já sabe que você pode alocar no máximo 3 bites.
+
++ o ; indica o final de um comando. Não é o número de linhas que indica a quantidade de comandos e sim os ;.
+

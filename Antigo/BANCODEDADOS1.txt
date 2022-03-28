@@ -1,0 +1,30 @@
+EXEMPLO DE BANCO DE DADOS
+
+CREATE DATABASE cadastro
+
+DEFAULT CHARACTER SET utf8
+
+DEFAULT COLLATE utf8_general_ci; 
+
+
+
+CREATE TABLE pessoas (
+
+id int not null auto_increment,
+
+nome varchar(30) NOT NULL,
+
+nascimento date, 
+
+sexo enum('M','F') NOT NULL,
+
+peso decimal(5,2), 
+
+altura decimal (3,2),
+
+nacionalidade varchar(20) default 'Brasil',
+
+primary key (id)
+) default charset = utf8;
+
+ 
